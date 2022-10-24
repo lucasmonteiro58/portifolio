@@ -12,7 +12,7 @@ const messages = Object.fromEntries(
 export const vueI18n = (app) => {
   const i18n = createI18n({
     legacy: false,
-    locale: "pt-BR",
+    locale: "en",
     messages,
   });
 
