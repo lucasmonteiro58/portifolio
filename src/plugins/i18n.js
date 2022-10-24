@@ -9,10 +9,12 @@ const messages = Object.fromEntries(
   })
 );
 
+const defaultLanguage = localStorage.getItem("language") || "en";
+
 export const vueI18n = (app) => {
   const i18n = createI18n({
     legacy: false,
-    locale: "en",
+    locale: defaultLanguage,
     messages,
   });
 

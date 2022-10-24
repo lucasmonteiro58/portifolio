@@ -9,6 +9,7 @@ module.exports = {
         grayLight: "#e9ebec",
         blueLight: "#a1c4fd",
         blueDark: "#0c151d",
+        grayText: "#575757",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

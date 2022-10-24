@@ -6,7 +6,9 @@ const { toogleLanguage } = usePreferenceStore();
 </script>
 
 <template>
-  <div class="bg-grayLight min-h-screen w-full dark:bg-blueDark">
+  <div
+    class="bg-grayLight min-h-screen w-full dark:bg-blueDark flex flex-col items-center px-5"
+  >
     <div class="flex justify-center gap-x-3 pt-4">
       <button
         class="bg-white rounded-full w-10 h-10 text-sm font-medium dark:bg-[#171f26] dark:text-[#fcfcfc] shadow"
