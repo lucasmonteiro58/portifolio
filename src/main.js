@@ -3,6 +3,8 @@ import { createPinia } from "pinia";
 
 import App from "./App.vue";
 import router from "./router";
+import { vueI18n } from "./plugins/i18n";
+import { globalComponents } from "./plugins/global-components";
 
 import "./assets/main.css";
 
@@ -14,5 +16,7 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
+vueI18n(app);
+globalComponents(app);
 
 app.mount("#app");

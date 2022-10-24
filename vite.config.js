@@ -1,15 +1,32 @@
 import { fileURLToPath, URL } from "node:url";
-import { resolve, dirname } from "node:path";
+import path from "path";
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { VitePWA } from "vite-plugin-pwa";
 import VueI18n from "@intlify/vite-plugin-vue-i18n";
+import AutoImport from "unplugin-auto-import/vite";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    AutoImport({
+      imports: [
+        "vue",
+        "vue-router",
+        "vue-i18n",
+        "vue/macros",
+        "@vueuse/head",
+        "@vueuse/core",
+      ],
+      dts: "src/auto-imports.d.ts",
+      dirs: ["src/composables", "src/store"],
+      vueTemplate: true,
+    }),
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
@@ -49,10 +66,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: resolve(
-        dirname(fileURLToPath(import.meta.url)),
-        "./path/to/src/locales/**"
-      ),
+      include: [path.resolve(__dirname, "locales/**")],
     }),
   ],
   resolve: {
