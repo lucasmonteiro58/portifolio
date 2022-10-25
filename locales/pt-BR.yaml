@@ -14,3 +14,15 @@ projects:
     title: Luz do Saber
     subtitle: Plataforma interativa voltada para o alfabetização de crianças e adultos.
     description: O projeto Luz do Saber é uma plataforma interativa voltada para o alfabetização de crianças e adultos, com o objetivo de ensinar a ler, escrever e conceitos básicos de matemática. O projeto foi desenvolvido em parceria com a Universidade Federal do Ceará(UFC) e o Laboratório de Mídias Educacionais(LME).
+  keepVue:
+    title: Keep Clone
+    subtitle: Clone do aplicativo Keep do Google.
+    description: Clone do aplicativo Keep do Google, desenvolvido em TypeScript e utilizando o Vite com Vue 3. Utilizei o TailwindCSS para estilização e o Firebase para armazenamento dos dados. Também foi implementado o sistema de PWA, para que o aplicativo possa ser instalado em dispositivos móveis.
+  weatherApp:
+    title: Weather App
+    subtitle: Aplicativo de previsão do tempo desenvolvido em Vue 3.
+    description: Aplicativo de previsão do tempo desenvolvido em Vue 3 e Typescript, utilizando a RapidAPI para obter os dados meteorológicos. Utilizei o TailwindCSS para estilização e o Netlify para deploy.
+  emaranhados:
+    title: Exposição Emaranhados
+    subtitle: Site Interativo para exposição virtual Emaranhados.
+    description: Emaranahdos é uma exposição virtual que tem como objetivo mostrar a relação entre a arte e a cibercultura. Foi desenvolvida em parceria com alunos da UFRGS. O site foi desenvolvido utilizando VueJs.

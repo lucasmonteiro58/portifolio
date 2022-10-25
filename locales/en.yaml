@@ -14,3 +14,15 @@ projects:
     title: Luz do Saber
     subtitle: Interactive platform aimed at the literacy of children and adults.
     description: The Luz do Saber project is an interactive platform aimed at the literacy of children and adults, with the objective of teaching to read, write and basic concepts of mathematics. The project was developed in partnership with the Federal University of Ceará (UFC) and the Educational Media Laboratory (LME).
+  keepVue:
+    title: Keep Clone
+    subtitle: Clone of the Google Keep application.
+    description: Clone of the Google Keep application, developed in TypeScript and using Vite with Vue 3. I used TailwindCSS for styling and Firebase for data storage. The PWA system was also implemented, so that the application can be installed on mobile devices.
+  weatherApp:
+    title: Weather App
+    subtitle: Weather app developed in Vue 3.
+    description: Weather app developed in Vue 3 e Typescript, using the RapidAPI to get the weather data. I used TailwindCSS for styling and Netlify to deploy.
+  emaranhados:
+    title: Emaranhados Exhibition
+    subtitle: Interactive site for virtual Emaranhados exhibition.
+    description: Emaranhados is a virtual exhibition that aims to show the relationship between art and cyberculture. It was developed in partnership with students from UFRGS. The site was developed using VueJs.
