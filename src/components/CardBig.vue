@@ -6,6 +6,14 @@ const emits = defineEmits(["close"]);
 function close() {
   emits("close");
 }
+
+function openLink(link) {
+  window.open(link, "_blank");
+}
+
+function openCode(link) {
+  window.open(link, "_blank");
+}
 </script>
 
 <template>
@@ -29,11 +37,12 @@ function close() {
         class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4"
       >
         <div class="text-xl font-bold text-grayText dark:text-[#cecece]">
-          {{ card.title }}
+          {{ $t(card.title) }}
         </div>
         <div>
           <button
             class="bg-blueLight px-3 py-2 rounded-md hover:bg-[#92bafb] dark:text-grayText font-medium shadow-sm active:shadow-md mr-3"
+            @click="openCode(card.linkCode)"
           >
             <IconifyIcon
               icon="akar-icons:github-fill"
@@ -42,6 +51,7 @@ function close() {
           </button>
           <button
             class="bg-blueLight px-2 py-2 rounded-md hover:bg-[#92bafb] dark:text-grayText font-medium min-w-[120px] shadow-sm active:shadow-md"
+            @click="openLink(card.link)"
           >
             {{ $t("access") }}
           </button>
@@ -49,7 +59,7 @@ function close() {
       </div>
 
       <div class="text-grayText text-sm mt-4 dark:text-[#cecece]">
-        {{ card.description }}
+        {{ $t(card.description) }}
       </div>
       <div class="flex flex-wrap gap-2 mt-5">
         <div

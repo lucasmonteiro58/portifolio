@@ -5,3 +5,8 @@ contactMe: Contact me
 portifolio: Portifolio
 aboutMe: About me
 access: Access
+projects:
+  amigosDoFuturo:
+    title: Amigos do Futuro
+    subtitle: Interactive platform aimed at the child audience.
+    description: The Amigos do Futuro project is an interactive platform aimed at the child audience, with the objective of teaching about the state of Ceará, its cities, its natural beauties and its culture. The project was developed in partnership with the Ceará 2050 project and the Federal University of Ceará (UFC).

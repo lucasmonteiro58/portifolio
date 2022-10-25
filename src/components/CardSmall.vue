@@ -12,10 +12,12 @@ defineProps({ card: { type: Object, required: true } });
       <div
         class="text-lg font-bold z-10 hidden group-hover:block text-grayText"
       >
-        {{ card.title }}
+        {{ $t(card.title) }}
       </div>
-      <div class="text-sm z-10 hidden group-hover:block text-grayText">
-        {{ card.subtitle }}
+      <div
+        class="text-sm z-10 hidden group-hover:block text-grayText text-center px-2"
+      >
+        {{ $t(card.subtitle) }}
       </div>
     </div>
 
