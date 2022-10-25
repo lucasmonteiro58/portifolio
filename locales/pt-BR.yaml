@@ -10,5 +10,7 @@ projects:
     title: Amigos do Futuro
     subtitle: Plataforma interativa voltada para o público infantil.
     description: O projeto Amigos do Futuro é uma plataforma interativa voltada para o público infantil, com o objetivo de ensinar sobre o estado de Ceará, suas cidades, suas belezas naturais e sua cultura. O projeto foi desenvolvido em parceria com o projeto Ceará 2050 e a Universidade Federal do Ceará(UFC).
-    link: https://lucasmonteiro58.github.io/AmigosdoFuturo/
-    linkGithub: https://github.com/lucasmonteiro58/AmigosdoFuturo
+  luzDoSaber:
+    title: Luz do Saber
+    subtitle: Plataforma interativa voltada para o alfabetização de crianças e adultos.
+    description: O projeto Luz do Saber é uma plataforma interativa voltada para o alfabetização de crianças e adultos, com o objetivo de ensinar a ler, escrever e conceitos básicos de matemática. O projeto foi desenvolvido em parceria com a Universidade Federal do Ceará(UFC) e o Laboratório de Mídias Educacionais(LME).

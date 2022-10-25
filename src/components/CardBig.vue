@@ -41,6 +41,7 @@ function openCode(link) {
         </div>
         <div>
           <button
+            v-if="card.linkCode"
             class="bg-blueLight px-3 py-2 rounded-md hover:bg-[#92bafb] dark:text-grayText font-medium shadow-sm active:shadow-md mr-3"
             @click="openCode(card.linkCode)"
           >
@@ -50,6 +51,7 @@ function openCode(link) {
             ></IconifyIcon>
           </button>
           <button
+            v-if="card.link"
             class="bg-blueLight px-2 py-2 rounded-md hover:bg-[#92bafb] dark:text-grayText font-medium min-w-[120px] shadow-sm active:shadow-md"
             @click="openLink(card.link)"
           >
