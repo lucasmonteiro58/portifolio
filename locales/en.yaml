@@ -26,3 +26,19 @@ projects:
     title: Emaranhados Exhibition
     subtitle: Interactive site for virtual Emaranhados exhibition.
     description: Emaranhados is a virtual exhibition that aims to show the relationship between art and cyberculture. It was developed in partnership with students from UFRGS. The site was developed using VueJs.
+  infoVirus:
+    title: InfoVirus
+    subtitle: Interactive site for the InfoVirus project.
+    description: InfoVirus is a project that aims to provide information about the coronavirus pandemic with a focus on prisons. The site was developed using VueJs in partnership with the Federal University of Santa Catarina (UFSC).
+  mideBalanca:
+    title: MIDE Interactive scale
+    subtitle: Game developed for children.
+    description: Game developed in Vuejs for children, with the objective of teaching mathematical concepts through gameification. The project was developed in partnership with the Educational Media Laboratory (LME) and the Federal University of Ceará (UFC).
+  mideIlha:
+    title: MIDE Island of Operations
+    subtitle: Game developed for children.
+    description: Game developed in Vuejs for children, with the objective of teaching mathematical concepts through gameification. The project was developed in partnership with the Educational Media Laboratory (LME) and the Federal University of Ceará (UFC).
+  lyriks:
+    title: Lyriks
+    subtitle: Music Application developed in React and Vite.
+    description: Music application developed in React Native, using the Shazam API to get the music data. The application was developed following JavaScript Mastery channel tutorial.

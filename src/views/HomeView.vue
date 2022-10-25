@@ -28,7 +28,7 @@ function closeCard() {
       <ActionButtons></ActionButtons>
       <SectionButtons></SectionButtons>
     </div>
-    <div class="grid grid-cols-notes gap-5 mt-10">
+    <div class="grid grid-cols-notes gap-5 mt-10 mb-24">
       <CardSmall
         v-for="card in cards"
         :key="card.title"

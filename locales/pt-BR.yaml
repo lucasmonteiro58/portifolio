@@ -26,3 +26,19 @@ projects:
     title: Exposição Emaranhados
     subtitle: Site Interativo para exposição virtual Emaranhados.
     description: Emaranahdos é uma exposição virtual que tem como objetivo mostrar a relação entre a arte e a cibercultura. Foi desenvolvida em parceria com alunos da UFRGS. O site foi desenvolvido utilizando VueJs.
+  infoVirus:
+    title: InfoVirus
+    subtitle: Site Interativo para o projeto InfoVirus.
+    description: InfoVirus é um projeto que tem como objetivo fornecer informações sobre a pandemia do coronavírus com foco nas prisões. O site foi desenvolvido utilizando VueJs em parceira com a Universidade Federal de Santa Catarina(UFSC).
+  mideBalanca:
+    title: MIDE Balança Interativa
+    subtitle: Jogo desenvolvido para o público infantil.
+    description: Jogo desenvolvido em VueJS para o público infantil, com o objetivo de ensinar conceitos matemáticos através da gameficação. O projeto foi desenvolvido em parceria com o Laboratório de Mídias Educacionais(LME) e a Universidade Federal do Ceará(UFC).
+  mideIlha:
+    title: MIDE Ilha das Operações
+    subtitle: Jogo desenvolvido para o público infantil.
+    description: Jogo desenvolvido em VueJS para o público infantil, com o objetivo de ensinar conceitos matemáticos através da gameficação. O projeto foi desenvolvido em parceria com o Laboratório de Mídias Educacionais(LME) e a Universidade Federal do Ceará(UFC).
+  lyriks:
+    title: Lyriks
+    subtitle: Aplicativo de música desenvolvido em React e Vite.
+    description: Aplicativo de música desenvolvido em React Native, utilizando a API do Shazam para obter os dados das músicas. O aplicativo foi desenvolvido seguindo tutorial do canal Javascript Mastery.
