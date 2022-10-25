@@ -3,8 +3,22 @@ import ActionButtons from "../components/ActionButtons.vue";
 import CardSmall from "../components/CardSmall.vue";
 import ProfilePhoto from "../components/ProfilePhoto.vue";
 import SectionButtons from "../components/SectionButtons.vue";
+import CardBig from "../components/CardBig.vue";
 
 import cards from "@/consts/cards";
+
+const cardSelected = ref(null);
+const showCard = ref(false);
+
+function openCard(card) {
+  cardSelected.value = card;
+  showCard.value = true;
+}
+
+function closeCard() {
+  showCard.value = false;
+  cardSelected.value = null;
+}
 </script>
 
 <template>
@@ -19,7 +33,9 @@ import cards from "@/consts/cards";
         v-for="card in cards"
         :key="card.title"
         :card="card"
+        @click="openCard(card)"
       ></CardSmall>
     </div>
+    <CardBig v-if="showCard" :card="cardSelected" @close="closeCard"></CardBig>
   </div>
 </template>
