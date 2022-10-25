@@ -1,9 +1,5 @@
 <script setup>
 defineProps({ card: { type: Object, required: true } });
-
-const useImage = (url) => {
-  return new URL(`/src/${url}`, import.meta.url).href;
-};
 </script>
 
 <template>
@@ -27,7 +23,7 @@ const useImage = (url) => {
 
     <div
       class="absolute w-full overflow-hidden h-full bg-cover group-hover:grayscale rounded-xl"
-      :style="{ backgroundImage: `url(${useImage(card.image)})` }"
+      :style="{ backgroundImage: `url(${card.image})` }"
     />
   </div>
 </template>

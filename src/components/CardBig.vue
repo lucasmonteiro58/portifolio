@@ -14,10 +14,6 @@ function openLink(link) {
 function openCode(link) {
   window.open(link, "_blank");
 }
-
-const useImage = (url) => {
-  return new URL(`/src/${url}`, import.meta.url).href;
-};
 </script>
 
 <template>
@@ -36,7 +32,7 @@ const useImage = (url) => {
       >
         <IconifyIcon icon="carbon:close"></IconifyIcon>
       </button>
-      <img :src="useImage(card.image)" alt="image" class="rounded-md w-full" />
+      <img :src="card.image" alt="image" class="rounded-md w-full" />
       <div
         class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4"
       >
