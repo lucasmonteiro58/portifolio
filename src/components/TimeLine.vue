@@ -22,12 +22,12 @@ function isEven(n) {
       >
         <div class="order-1 w-5/12"></div>
         <div
-          class="z-20 flex items-center order-1 bg-[#e9ebec] w-8 h-8 rounded-full border-2 border-[#bcbcbc]"
+          class="z-20 flex items-center justify-center order-1 bg-[#e9ebec] dark:bg-[#0c151d] w-8 h-8 rounded-full border-2 border-[#bcbcbc]"
         >
-          <h1 class="mx-auto font-semibold text-lg text-white"></h1>
+          <IconifyIcon :icon="timeline.icon" height="18px"></IconifyIcon>
         </div>
         <div
-          class="order-1 w-5/12 sm:px-6 px-2 py-4"
+          class="order-1 w-5/12 sm:px-2 px-2 py-4"
           :class="isEven(i) ? 'text-right' : ''"
         >
           <h3 class="mb-1 font-bold sm:text-lg text-md uppercase leading-5">
