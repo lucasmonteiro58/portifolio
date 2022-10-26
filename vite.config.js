@@ -33,7 +33,7 @@ export default defineConfig({
         name: "Lucas Monteiro - Portfolio",
         short_name: "Lucas Monteiro",
         description: "Meu portifólio de projetos",
-        theme_color: "#A1C4FD",
+        theme_color: "#e9ebec",
         display: "standalone",
         background_color: "#fff",
         icons: [
