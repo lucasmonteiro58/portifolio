@@ -11,7 +11,7 @@ function tooglePortifolio() {
   >
     <button
       @click="tooglePortifolio"
-      class="sm:px-8 px-11 py-4 rounded-md font-medium sm:min-w-[240px]"
+      class="sm:px-8 px-9 py-4 rounded-md font-medium sm:min-w-[240px]"
       :class="
         portifolio
           ? 'bg-[#d7d7d7] dark:bg-[#0c151d]'
@@ -22,7 +22,7 @@ function tooglePortifolio() {
     </button>
     <button
       @click="tooglePortifolio"
-      class="= sm:px-8 px-11 py-4 rounded-md font-medium sm:min-w-[240px]"
+      class="= sm:px-8 px-9 py-4 rounded-md font-medium sm:min-w-[240px]"
       :class="
         portifolio
           ? 'bg-white dark:bg-[#171f26]'
