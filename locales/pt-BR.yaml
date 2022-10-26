@@ -3,7 +3,11 @@ frontEnd-developer: Desenvolvedor Front-end
 downloadCV: Baixar CV
 contactMe: Contato
 portifolio: Portifólio
-aboutMe: Sobre
+about: Sobre
+aboutMe: Sobre mim
+aboutText: Sou formado em Sistemas e Mídias Digitais, com foco em tecnologias da web. Atuo no mercado principalmente com desenvolvimento front-end (Vue.js). Apaixonado por séries e filmes. 📺️💻
+techText: Um pouco das coisas que eu conheço e/ou já trabalhei
+formation: Formação e Experiências Profissionais
 access: Acessar
 projects:
   amigosDoFuturo:

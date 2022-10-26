@@ -1,7 +1,9 @@
 <script setup>
-const portifolio = ref(true);
+defineProps({ portifolio: { type: Boolean, required: true } });
+const emits = defineEmits(["toogle"]);
+
 function tooglePortifolio() {
-  portifolio.value = !portifolio.value;
+  emits("toogle");
 }
 </script>
 
@@ -29,7 +31,7 @@ function tooglePortifolio() {
           : 'bg-[#d7d7d7] dark:bg-[#0c151d]'
       "
     >
-      {{ $t("aboutMe") }}
+      {{ $t("about") }}
     </button>
   </div>
 </template>
