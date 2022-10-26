@@ -37,7 +37,7 @@ function openCode(link) {
         class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4"
       >
         <div class="text-xl font-bold text-grayText dark:text-[#cecece]">
-          {{ $t(card.title) }}
+          {{ $t(`projects.${card.name}.title`) }}
         </div>
         <div>
           <button
@@ -61,7 +61,7 @@ function openCode(link) {
       </div>
 
       <div class="text-grayText text-sm mt-4 dark:text-[#cecece]">
-        {{ $t(card.description) }}
+        {{ $t(`projects.${card.name}.description`) }}
       </div>
       <div class="flex flex-wrap gap-2 mt-5">
         <div

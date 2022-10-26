@@ -31,7 +31,7 @@ function closeCard() {
     <div class="grid grid-cols-notes gap-5 mt-10 mb-24">
       <CardSmall
         v-for="card in cards"
-        :key="card.title"
+        :key="card.name"
         :card="card"
         @click="openCard(card)"
       ></CardSmall>

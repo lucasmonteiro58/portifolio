@@ -7,11 +7,11 @@ function tooglePortifolio() {
 
 <template>
   <div
-    class="flex justify-center mt-10 flex-wrap bg-white px-4 py-4 rounded-xl w-fit dark:bg-[#171f26]"
+    class="flex justify-center mt-8 bg-white px-4 py-4 rounded-xl w-fit dark:bg-[#171f26]"
   >
     <button
       @click="tooglePortifolio"
-      class="px-8 py-4 rounded-md font-medium min-w-[240px]"
+      class="sm:px-8 px-11 py-4 rounded-md font-medium sm:min-w-[240px]"
       :class="
         portifolio
           ? 'bg-[#d7d7d7] dark:bg-[#0c151d]'
@@ -22,7 +22,7 @@ function tooglePortifolio() {
     </button>
     <button
       @click="tooglePortifolio"
-      class="= px-8 py-4 rounded-md font-medium min-w-[240px]"
+      class="= sm:px-8 px-11 py-4 rounded-md font-medium sm:min-w-[240px]"
       :class="
         portifolio
           ? 'bg-white dark:bg-[#171f26]'
