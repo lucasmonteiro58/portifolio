@@ -4,6 +4,7 @@ import CardSmall from "../components/CardSmall.vue";
 import ProfilePhoto from "../components/ProfilePhoto.vue";
 import SectionButtons from "../components/SectionButtons.vue";
 import CardBig from "../components/CardBig.vue";
+import TimeLine from "../components/TimeLine.vue";
 
 import cards from "@/consts/cards";
 import techs from "@/consts/tech";
@@ -66,6 +67,7 @@ function tooglePortifolio() {
         </div>
       </div>
       <div class="text-xl font-bold mt-16">{{ $t("formation") }}</div>
+      <TimeLine></TimeLine>
     </div>
     <CardBig v-if="showCard" :card="cardSelected" @close="closeCard"></CardBig>
   </div>
