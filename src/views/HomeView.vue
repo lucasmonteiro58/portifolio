@@ -58,7 +58,7 @@ function tooglePortifolio() {
       >
         <div v-for="tech in techs" :key="tech">
           <img
-            class="sm:h-[50px] h-[40px] grayscale hover:grayscale-0 transition-all duration-300"
+            class="sm:h-[45px] h-[40px] grayscale hover:grayscale-0 transition-all duration-300"
             :src="tech.image"
             :alt="tech.name"
             :title="tech.name"
