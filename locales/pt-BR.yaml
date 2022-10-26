@@ -9,6 +9,32 @@ aboutText: Sou formado em Sistemas e Mídias Digitais, com foco em tecnologias d
 techText: Um pouco das coisas que eu conheço e/ou já trabalhei
 formation: Formação e Experiências Profissionais
 access: Acessar
+timeline:
+  college:
+    title: Faculdade
+    subtitle: Sistemas e Mídias Digitais
+    locale: UFC
+    date: 2015 - 2020
+  internship:
+    title: Estágio
+    subtitle: Desenvolvedor Web
+    locale: LME
+    date: 2019 - 2021
+  temp:
+    title: Temporário
+    subtitle: Desenvolvedor Front-end
+    locale: LIV Saúde
+    date: "2021"
+  freelance:
+    title: Freelancer
+    subtitle: Desenvolvedor Front-end
+    locale: Desenrolados
+    date: 2021 - 2022
+  work:
+    title: Tempo Integral
+    subtitle: Desenvolvedor Front-end
+    locale: Lyncas
+    date: 2021 - Atual
 projects:
   amigosDoFuturo:
     title: Amigos do Futuro

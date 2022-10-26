@@ -31,13 +31,17 @@ function isEven(n) {
           :class="isEven(i) ? 'text-right' : ''"
         >
           <h3 class="mb-1 font-bold sm:text-lg text-md uppercase leading-5">
-            {{ timeline.title }}
+            {{ $t("timeline." + timeline.name + ".title") }}
           </h3>
           <div class="font-semibold leading-5 mb-1">
-            {{ timeline.subtitle }}
+            {{ $t("timeline." + timeline.name + ".subtitle") }}
           </div>
-          <div class="text-sm mb-1">{{ timeline.locale }}</div>
-          <div class="text-sm">{{ timeline.date }}</div>
+          <div class="text-sm mb-1">
+            {{ $t("timeline." + timeline.name + ".locale") }}
+          </div>
+          <div class="text-sm">
+            {{ $t("timeline." + timeline.name + ".date") }}
+          </div>
         </div>
       </div>
     </div>

@@ -9,6 +9,32 @@ aboutText: I'm graduated in Digital Systems and Media, with a focus on web techn
 techText: A little bit of the things I know and/or have worked with
 formation: Formation and Professional Experiences
 access: Access
+timeline:
+  college:
+    title: College
+    subtitle: Digital Systems and Media
+    locale: UFC
+    date: 2015 - 2020
+  internship:
+    title: Internship
+    subtitle: Web Developer
+    locale: LME
+    date: 2019 - 2021
+  temp:
+    title: Temporary
+    subtitle: Front-end Developer
+    locale: LIV Saúde
+    date: "2021"
+  freelance:
+    title: Freelancer
+    subtitle: Front-end Developer
+    locale: Desenrolados
+    date: 2021 - 2022
+  work:
+    title: Full-time
+    subtitle: Desenvolvedor Front-end
+    locale: Lyncas
+    date: 2021 - Current
 projects:
   amigosDoFuturo:
     title: Amigos do Futuro
