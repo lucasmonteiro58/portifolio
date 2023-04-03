@@ -1,9 +1,13 @@
 <script setup>
 defineProps({ portifolio: { type: Boolean, required: true } });
-const emits = defineEmits(["toogle"]);
+const emits = defineEmits(["portifolio", "about"]);
 
 function tooglePortifolio() {
-  emits("toogle");
+  emits("portifolio");
+}
+
+function aboutMe() {
+  emits("about");
 }
 </script>
 
@@ -23,7 +27,7 @@ function tooglePortifolio() {
       {{ $t("portifolio") }}
     </button>
     <button
-      @click="tooglePortifolio"
+      @click="aboutMe"
       class="= sm:px-8 px-9 py-4 rounded-md font-medium sm:min-w-[240px]"
       :class="
         portifolio

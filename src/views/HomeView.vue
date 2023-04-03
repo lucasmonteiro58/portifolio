@@ -23,8 +23,12 @@ function closeCard() {
 }
 
 const portifolio = ref(true);
-function tooglePortifolio() {
-  portifolio.value = !portifolio.value;
+function openPortifolio() {
+  portifolio.value = true;
+}
+
+function openAbout() {
+  portifolio.value = false;
 }
 </script>
 
@@ -35,7 +39,8 @@ function tooglePortifolio() {
       <ActionButtons></ActionButtons>
       <SectionButtons
         :portifolio="portifolio"
-        @toogle="tooglePortifolio"
+        @portifolio="openPortifolio"
+        @about="openAbout"
       ></SectionButtons>
     </div>
     <div
