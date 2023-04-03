@@ -24,7 +24,11 @@ function isEven(n) {
         <div
           class="z-20 flex items-center justify-center order-1 bg-[#e9ebec] dark:bg-[#0c151d] w-8 h-8 rounded-full border-2 border-[#bcbcbc]"
         >
-          <IconifyIcon :icon="timeline.icon" height="18px"></IconifyIcon>
+          <img
+            :src="timeline.image"
+            alt=""
+            class="rounded-full w-[30px] pointer-events-none"
+          />
         </div>
         <div
           class="order-1 w-5/12 sm:px-2 px-2 py-4"
@@ -37,7 +41,9 @@ function isEven(n) {
             {{ $t("timeline." + timeline.name + ".subtitle") }}
           </div>
           <div class="text-sm mb-1">
-            {{ $t("timeline." + timeline.name + ".locale") }}
+            <a :href="timeline.site" target="_blank">
+              {{ $t("timeline." + timeline.name + ".locale") }}
+            </a>
           </div>
           <div class="text-sm">
             {{ $t("timeline." + timeline.name + ".date") }}
