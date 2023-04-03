@@ -19,6 +19,10 @@ const timeline = [
     name: "work",
     icon: "fluent-emoji:briefcase",
   },
+  {
+    name: "work2",
+    icon: "fluent-emoji:briefcase",
+  },
 ];
 
 export default timeline;

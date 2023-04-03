@@ -34,7 +34,12 @@ timeline:
     title: Tempo Integral
     subtitle: Desenvolvedor Front-end
     locale: Lyncas
-    date: 2021 - Atual
+    date: 2021 - 2023
+  work2:
+    title: Tempo Integral
+    subtitle: Desenvolvedor Front-end
+    locale: Cuco Health
+    date: 2023 - Atual
 projects:
   amigosDoFuturo:
     title: Amigos do Futuro
