@@ -44,7 +44,7 @@ projects:
   amigosDoFuturo:
     title: Amigos do Futuro
     subtitle: Plataforma interativa voltada para o público infantil.
-    description: O projeto Amigos do Futuro é uma plataforma interativa voltada para o público infantil, com o objetivo de ensinar sobre o estado de Ceará, suas cidades, suas belezas naturais e sua cultura. O projeto foi desenvolvido em parceria com o projeto Ceará 2050 e a Universidade Federal do Ceará(UFC).
+    description: O projeto Amigos do Futuro é uma plataforma interativa voltada para o público infantil, com o objetivo de ensinar sobre o estado de Ceará, suas cidades, suas belezas naturais e sua cultura. O projeto foi desenvolvido em parceria com o projeto Ceará 2050 e a Universidade Federal do Ceará(UFC). (O site possui um carregamento lento e a princípio só possui a versão desktop)
   luzDoSaber:
     title: Luz do Saber
     subtitle: Plataforma interativa voltada para o alfabetização de crianças e adultos.
@@ -77,3 +77,11 @@ projects:
     title: Lyriks
     subtitle: Aplicativo de música desenvolvido em React e Vite.
     description: Aplicativo de música desenvolvido em React Native, utilizando a API do Shazam para obter os dados das músicas. O aplicativo foi desenvolvido seguindo tutorial do canal Javascript Mastery.
+  pokedex:
+    title: Pokédex
+    subtitle: Pokédex desenvolvida em Nuxt e Typescript.
+    description: Pokédex desenvolvida em Nuxt e Typescript, utilizando a PokeAPI para obter os dados dos pokémons. O aplicativo é responsivo e obtém um pokémon aleatório ao carregar. Também foi implementado um sistema de pesquisa por nome ou número.
+  themet:
+    title: The Met Museum
+    subtitle: Site desenvolvido para um desafio Utilizando Vue 3 e Typescript.
+    description: Site desenvolvido para um desafio Utilizando Vue 3 e Typescript, utilizando a API do The Met Museum para obter os dados das obras. O site é responsivo e possui um sistema de pesquisa de obras, além de um sistema de paginação. Também conta com um backgorund interativo 360° na tela inicial e um sistema de favoritos. (Toda interface foi desenvolvida por mim, o desafio só fornecia as instruções)

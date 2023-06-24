@@ -44,7 +44,7 @@ projects:
   amigosDoFuturo:
     title: Amigos do Futuro
     subtitle: Interactive platform aimed at the child audience.
-    description: The Amigos do Futuro project is an interactive platform aimed at the child audience, with the objective of teaching about the state of Ceará, its cities, its natural beauties and its culture. The project was developed in partnership with the Ceará 2050 project and the Federal University of Ceará (UFC).
+    description: The Amigos do Futuro project is an interactive platform aimed at the child audience, with the objective of teaching about the state of Ceará, its cities, its natural beauties and its culture. The project was developed in partnership with the Ceará 2050 project and the Federal University of Ceará (UFC). (The site has a slow loading and at first it only has the desktop version)
   luzDoSaber:
     title: Luz do Saber
     subtitle: Interactive platform aimed at the literacy of children and adults.
@@ -77,3 +77,11 @@ projects:
     title: Lyriks
     subtitle: Music Application developed in React and Vite.
     description: Music application developed in React Native, using the Shazam API to get the music data. The application was developed following JavaScript Mastery channel tutorial.
+  pokedex:
+    title: Pokédex
+    subtitle: Pokédex developed in Nuxt and Typescript.
+    description: Pokédex developed in Nuxt and Typescript, using the PokeAPI to get the pokemon data. The application was responsive and get a random pokemon on load. Also was implemented a search system by name or number.
+  themet:
+    title: The Met Museum
+    subtitle: Site developed for a challenge using Vue 3 and Typescript.
+    description: Site developed for a challenge using Vue 3 and Typescript, using the The Met Museum API to get the data of the works. The site is responsive and has a work search system, as well as a pagination system. It also has an interactive 360° backgorund on the home screen and a favorites system. (All interface was developed by me, the challenge only provided the instructions.)
