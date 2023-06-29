@@ -1,8 +1,11 @@
 <script setup>
-import { UseDark } from "@vueuse/components";
 import { usePreferenceStore } from "./stores/preference";
 
-const { toogleLanguage } = usePreferenceStore();
+const { toogleLanguage, toggleTheme, isDark, darkTheme } = usePreferenceStore();
+
+onMounted(() => {
+  darkTheme();
+});
 </script>
 
 <template>
@@ -16,16 +19,15 @@ const { toogleLanguage } = usePreferenceStore();
       >
         {{ $t("currentLanguage") }}
       </button>
-      <UseDark v-slot="{ isDark, toggleDark }">
-        <button
-          class="bg-white rounded-full w-10 h-10 flex justify-center items-center dark:bg-[#171f26] dark:text-[#cecece] shadow"
-          @click="toggleDark()"
-        >
-          <IconifyIcon
-            :icon="isDark ? 'carbon-moon' : 'carbon-sun'"
-          ></IconifyIcon>
-        </button>
-      </UseDark>
+
+      <button
+        class="bg-white rounded-full w-10 h-10 flex justify-center items-center dark:bg-[#171f26] dark:text-[#cecece] shadow"
+        @click="toggleTheme"
+      >
+        <IconifyIcon
+          :icon="isDark ? 'carbon-moon' : 'carbon-sun'"
+        ></IconifyIcon>
+      </button>
     </div>
     <RouterView />
   </div>
