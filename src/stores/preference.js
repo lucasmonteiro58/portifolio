@@ -13,12 +13,12 @@ export const usePreferenceStore = defineStore("preference", () => {
 
   function toggleTheme() {
     toggleDark();
-    tag.setAttribute("content", isDark.value ? "#030507" : "#e9ebec");
+    tag.setAttribute("content", isDark.value ? "#080d12" : "#e9ebec");
     dark.value = isDark.value;
   }
 
   function darkTheme() {
-    if (isDark.value) tag.setAttribute("content", "#0c151d");
+    if (isDark.value) tag.setAttribute("content", "#080d12");
   }
 
   const toogleLanguage = () => {
