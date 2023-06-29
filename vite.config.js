@@ -32,7 +32,7 @@ export default defineConfig({
       manifest: {
         name: "Lucas Monteiro - Portfolio",
         short_name: "Lucas Monteiro",
-        description: "Meu portifólio de projetos",
+        description: "Meu portfólio de projetos",
         theme_color: "#e9ebec",
         display: "standalone",
         background_color: "#fff",
