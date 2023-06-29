@@ -1,7 +1,8 @@
 <script setup>
 import { usePreferenceStore } from "./stores/preference";
 
-const { toogleLanguage, toggleTheme, isDark, darkTheme } = usePreferenceStore();
+const { toogleLanguage, toggleTheme, darkTheme } = usePreferenceStore();
+const preference = usePreferenceStore();
 
 onMounted(() => {
   darkTheme();
@@ -25,7 +26,7 @@ onMounted(() => {
         @click="toggleTheme"
       >
         <IconifyIcon
-          :icon="isDark ? 'carbon-moon' : 'carbon-sun'"
+          :icon="preference.dark ? 'carbon-moon' : 'carbon-sun'"
         ></IconifyIcon>
       </button>
     </div>

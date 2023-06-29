@@ -7,12 +7,14 @@ export const usePreferenceStore = defineStore("preference", () => {
   const language = ref(i18n.locale.value);
 
   const isDark = useDark();
+  const dark = ref(isDark.value);
   const toggleDark = useToggle(isDark);
   const tag = document.querySelector('meta[name="theme-color"]');
 
   function toggleTheme() {
     toggleDark();
     tag.setAttribute("content", isDark.value ? "#0c151d" : "#e9ebec");
+    dark.value = isDark.value;
   }
 
   function darkTheme() {
@@ -29,7 +31,7 @@ export const usePreferenceStore = defineStore("preference", () => {
     language,
     i18n,
     toogleLanguage,
-    isDark,
+    dark,
     toggleTheme,
     darkTheme,
   };
