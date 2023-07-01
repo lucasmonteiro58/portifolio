@@ -2,10 +2,14 @@
 
 <template>
   <div class="flex justify-center mt-7">
-    <img src="@/assets/images/profile.png" alt="profile" class="w-[120px]" />
+    <img
+      src="@/assets/images/profile.png"
+      alt="profile"
+      class="w-[120px] h-fit"
+    />
     <div class="ml-5 mt-2">
-      <div class="text-2xl font-bold">Lucas Monteiro</div>
-      <div class="text-grayText dark:text-grayLight">
+      <div class="text-2xl leading-5 font-bold">Lucas Monteiro</div>
+      <div class="text-grayText dark:text-grayLight leading-4 mt-1">
         {{ $t("frontEnd-developer") }}
       </div>
       <div class="flex gap-x-2 text-grayText dark:text-grayLight mt-2">

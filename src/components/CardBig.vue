@@ -34,9 +34,11 @@ function openCode(link) {
       </button>
       <img :src="card.image" alt="image" class="rounded-md w-full" />
       <div
-        class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4"
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4 gap-y-2"
       >
-        <div class="text-xl font-bold text-grayText dark:text-[#cecece]">
+        <div
+          class="text-xl font-bold text-grayText dark:text-[#cecece] leading-5"
+        >
           {{ $t(`projects.${card.name}.title`) }}
         </div>
         <div>

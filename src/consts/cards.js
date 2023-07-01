@@ -33,18 +33,11 @@ const cards = [
     tags: ["Typescript", "Vue 3", "Vite", "Tailwind", "AFrame", "Pinia"],
   },
   {
-    name: "pokedex",
-    image: pokedex,
-    link: "https://ap-pokedex.netlify.app/",
-    linkCode: "https://github.com/lucasmonteiro58/pokedex",
-    tags: ["Typescript", "Nuxt", "Tailwind", "Pinia"],
-  },
-  {
-    name: "weatherApp",
-    image: weatherApp,
-    link: "https://weather-app-by-lucas.netlify.app/",
-    linkCode: "https://github.com/lucasmonteiro58/weather-app",
-    tags: ["Vue", "TypeScript", "Vite", "RapidAPI", "Tailwind"],
+    name: "lyriks",
+    image: lyriks,
+    link: "https://lyriks-by-lucas.netlify.app/",
+    linkCode: "https://github.com/lucasmonteiro58/lyriks",
+    tags: ["Javascript", "HTML", "CSS", "React", "Vite"],
   },
   {
     name: "infoVirus",
@@ -52,6 +45,13 @@ const cards = [
     link: "https://info-virus-v3.netlify.app/",
     linkCode: "",
     tags: ["Javascript", "HTML", "CSS", "Vue"],
+  },
+  {
+    name: "weatherApp",
+    image: weatherApp,
+    link: "https://weather-app-by-lucas.netlify.app/",
+    linkCode: "https://github.com/lucasmonteiro58/weather-app",
+    tags: ["Vue", "TypeScript", "Vite", "RapidAPI", "Tailwind"],
   },
   {
     name: "keepVue",
@@ -67,7 +67,6 @@ const cards = [
     linkCode: "",
     tags: ["Javascript", "HTML", "CSS", "Vue"],
   },
-
   {
     name: "mideBalanca",
     image: mideBalanca,
@@ -82,12 +81,13 @@ const cards = [
     linkCode: "",
     tags: ["Javascript", "HTML", "CSS", "Vue", "Nuxt"],
   },
+
   {
-    name: "lyriks",
-    image: lyriks,
-    link: "https://lyriks-by-lucas.netlify.app/",
-    linkCode: "https://github.com/lucasmonteiro58/lyriks",
-    tags: ["Javascript", "HTML", "CSS", "React", "Vite"],
+    name: "pokedex",
+    image: pokedex,
+    link: "https://pokedex.lucasmonteiro.dev/",
+    linkCode: "https://github.com/lucasmonteiro58/pokedex",
+    tags: ["Typescript", "Nuxt", "Tailwind", "Pinia"],
   },
 ];
 

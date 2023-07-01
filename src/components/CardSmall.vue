@@ -4,7 +4,7 @@ defineProps({ card: { type: Object, required: true } });
 
 <template>
   <div
-    class="group w-full sm:h-[140px] h-[200px] rounded-xl flex flex-col justify-center items-center relative transition-all duration-300 shadow-md cursor-pointer p-3"
+    class="group w-full sm:h-[140px] h-[170px] xs:h-[200px] rounded-xl flex flex-col justify-center items-center relative transition-all duration-300 shadow-md cursor-pointer p-3"
   >
     <div
       class="fill-animation w-full h-full z-10 absolute flex flex-col justify-center items-center rounded-xl"
