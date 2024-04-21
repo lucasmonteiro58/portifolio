@@ -5,7 +5,7 @@
     <img
       src="@/assets/images/profile.png"
       alt="profile"
-      class="w-[120px] h-fit"
+      class="w-[120px] h-[120px]"
     />
     <div class="ml-5 mt-2">
       <div class="text-2xl leading-5 font-bold">Lucas Monteiro</div>
