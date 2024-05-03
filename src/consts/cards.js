@@ -9,6 +9,7 @@ import mideilha from "@/assets/images/projects/mide-ilha.png";
 import keepvue from "@/assets/images/projects/keep-vue.png";
 import pokedex from "@/assets/images/projects/pokedex.png";
 import themet from "@/assets/images/projects/themet.png";
+import makeyourcase from "@/assets/images/projects/makeyourcase.png";
 
 const cards = [
   {
@@ -31,6 +32,13 @@ const cards = [
     link: "https://themetmuseum.netlify.app/",
     linkCode: "https://github.com/lucasmonteiro58/metropolitan-museum-of-art",
     tags: ["Typescript", "Vue 3", "Vite", "Tailwind", "AFrame", "Pinia"],
+  },
+  {
+    name: "makeyourcase",
+    image: makeyourcase,
+    link: "https://make-your-case.vercel.app/",
+    linkCode: "https://github.com/lucasmonteiro58/make-your-case",
+    tags: ["Typescript", "Nuxt 3", "Frabric.js", "Vuetify", "Pinia"],
   },
   {
     name: "lyriks",

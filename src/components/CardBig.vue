@@ -32,7 +32,11 @@ function openCode(link) {
       >
         <IconifyIcon icon="carbon:close"></IconifyIcon>
       </button>
-      <img :src="card.image" alt="image" class="rounded-md w-full" />
+      <img
+        :src="card.image"
+        alt="image"
+        class="rounded-md w-full border border-gray-200"
+      />
       <div
         class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4 gap-y-2"
       >

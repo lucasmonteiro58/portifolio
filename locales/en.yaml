@@ -85,3 +85,7 @@ projects:
     title: The Met Museum
     subtitle: Site developed for a challenge using Vue 3 and Typescript.
     description: Site developed for a challenge using Vue 3 and Typescript, using the The Met Museum API to get the data of the works. The site is responsive and has a work search system, as well as a pagination system. It also has an interactive 360° backgorund on the home screen and a favorites system. (All interface was developed by me, the challenge only provided the instructions.)
+  makeyourcase:
+    title: Make Your Case
+    subtitle: Site developed for a challenge using Nuxt 3, Typescript, and canvas manipulation.
+    description: Site developed for a challenge using Nuxt 3, Typescript, and canvas manipulation with the objective of creating personalized cell phone covers. The application allows the choice of images, texts and colors for the creation of the cover, as well as allowing the addition of stickers.
