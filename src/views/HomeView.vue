@@ -5,9 +5,11 @@ import ProfilePhoto from "../components/ProfilePhoto.vue";
 import SectionButtons from "../components/SectionButtons.vue";
 import CardBig from "../components/CardBig.vue";
 import TimeLine from "../components/TimeLine.vue";
+import { useProjects } from "@/composables/useProjects";
 
-import cards from "@/consts/cards";
 import techs from "@/consts/tech";
+
+const { fetchProjects, projects } = useProjects();
 
 const cardSelected = ref(null);
 const showCard = ref(false);
@@ -30,6 +32,10 @@ function openPortifolio() {
 function openAbout() {
   portifolio.value = false;
 }
+
+onMounted(async () => {
+  await fetchProjects();
+});
 </script>
 
 <template>
@@ -46,21 +52,21 @@ function openAbout() {
     <div
       v-motion-slide-right
       v-if="portifolio"
-      class="grid grid-cols-notes gap-5 mt-10 mb-24"
+      class="grid gap-5 mt-10 mb-24 grid-cols-notes"
     >
       <CardSmall
-        v-for="card in cards"
-        :key="card.name"
-        :card="card"
-        @click="openCard(card)"
+        v-for="project in projects"
+        :key="project.name"
+        :card="project"
+        @click="openCard(project)"
       ></CardSmall>
     </div>
     <div v-motion-slide-left v-else class="mt-10 mb-10">
       <div class="text-xl font-bold">{{ $t("aboutMe") }}</div>
       <div class="mt-4">{{ $t("aboutText") }}</div>
-      <div class="text-xl font-bold mt-8">{{ $t("techText") }}</div>
+      <div class="mt-8 text-xl font-bold">{{ $t("techText") }}</div>
       <div
-        class="grid sm:grid-cols-5 grid-cols-3 gap-y-6 gap-x-4 mt-12 w-fit mx-auto items-center"
+        class="grid items-center grid-cols-3 mx-auto mt-12 sm:grid-cols-5 gap-y-6 gap-x-4 w-fit"
       >
         <div v-for="tech in techs" :key="tech">
           <img
@@ -71,7 +77,7 @@ function openAbout() {
           />
         </div>
       </div>
-      <div class="text-xl font-bold mt-16">{{ $t("formation") }}</div>
+      <div class="mt-16 text-xl font-bold">{{ $t("formation") }}</div>
       <TimeLine></TimeLine>
     </div>
     <CardBig v-if="showCard" :card="cardSelected" @close="closeCard"></CardBig>
