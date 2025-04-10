@@ -22,7 +22,7 @@ export const usePreferenceStore = defineStore("preference", () => {
   }
 
   const toogleLanguage = () => {
-    language.value = language.value === "en" ? "pt-BR" : "en";
+    language.value = language.value === "en" ? "pt" : "en";
     i18n.locale.value = language.value;
     localStorage.setItem("language", language.value);
   };

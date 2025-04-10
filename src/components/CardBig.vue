@@ -33,12 +33,12 @@ function openCode(link) {
         <IconifyIcon icon="carbon:close"></IconifyIcon>
       </button>
       <img
-        :src="card.image"
+        :src="card.image_url"
         alt="image"
-        class="rounded-md w-full border border-gray-200"
+        class="w-full border border-gray-200 rounded-md"
       />
       <div
-        class="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-4 gap-y-2"
+        class="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-between gap-y-2"
       >
         <div
           class="text-xl font-bold text-grayText dark:text-[#cecece] leading-5"
@@ -47,9 +47,9 @@ function openCode(link) {
         </div>
         <div>
           <button
-            v-if="card.linkCode"
+            v-if="card.link_code"
             class="bg-blueLight px-3 py-2 rounded-md hover:bg-[#92bafb] dark:text-grayText font-medium shadow-sm active:shadow-md mr-3"
-            @click="openCode(card.linkCode)"
+            @click="openCode(card.link_code)"
           >
             <IconifyIcon
               icon="akar-icons:github-fill"
