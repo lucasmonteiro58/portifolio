@@ -8,7 +8,7 @@ export function useProjects() {
     const { data, error } = await supabase
       .from("projects")
       .select("*")
-      .order("id", { ascending: true });
+      .order("order", { ascending: true });
 
     if (error) {
       console.error("Error fetching projects:", error);
