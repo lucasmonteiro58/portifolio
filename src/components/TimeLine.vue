@@ -1,23 +1,28 @@
 <script setup>
-import timelines from "../consts/timeline";
+import { useJobs } from "@/composables/useJobs";
+const { fetchJobs, jobs } = useJobs();
 
 function isEven(n) {
   return n % 2 == 0;
 }
+
+onMounted(async () => {
+  await fetchJobs();
+});
 </script>
 
 <template>
-  <div class="container mx-auto w-full h-full">
-    <div class="relative wrap overflow-hidden sm:p-10 p-0 h-full mt-10">
+  <div class="container w-full h-full mx-auto">
+    <div class="relative h-full p-0 mt-10 overflow-hidden wrap sm:p-10">
       <div
-        class="border-2-2 absolute border-opacity-20 border-gray-700 dark:border-gray-200 h-full border"
+        class="absolute h-full border border-gray-700 border-2-2 border-opacity-20 dark:border-gray-200"
         style="left: 50%"
       ></div>
       <!-- right timeline -->
       <div
-        v-for="(timeline, i) in timelines"
+        v-for="(timeline, i) in jobs"
         :key="timeline"
-        class="mb-8 flex justify-between items-center w-full right-timeline"
+        class="flex items-center justify-between w-full mb-8 right-timeline"
         :class="isEven(i) ? 'flex-row-reverse' : 'flex-row'"
       >
         <div class="order-1 w-5/12"></div>
@@ -31,16 +36,16 @@ function isEven(n) {
           />
         </div>
         <div
-          class="order-1 w-5/12 sm:px-2 px-2 py-4"
+          class="order-1 w-5/12 px-2 py-4 sm:px-2"
           :class="isEven(i) ? 'text-right' : ''"
         >
-          <h3 class="mb-1 font-bold sm:text-lg text-md uppercase leading-5">
+          <h3 class="mb-1 font-bold leading-5 uppercase sm:text-lg text-md">
             {{ $t("timeline." + timeline.name + ".title") }}
           </h3>
-          <div class="font-semibold leading-5 mb-1">
+          <div class="mb-1 font-semibold leading-5">
             {{ $t("timeline." + timeline.name + ".subtitle") }}
           </div>
-          <div class="text-sm mb-1">
+          <div class="mb-1 text-sm">
             <a :href="timeline.site" target="_blank">
               {{ $t("timeline." + timeline.name + ".locale") }}
             </a>
