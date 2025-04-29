@@ -2,7 +2,7 @@ name: Keep Supabase Awake
 
 on:
   schedule:
-     - cron: 0 3 */3 * * # executa a cada 3 dias às 03:00 UTC
+     - cron: 0 3 */2 * * # executa a cada 3 dias às 03:00 UTC
   workflow_dispatch:  # permite executar manualmente
 
 jobs:
