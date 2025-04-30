@@ -1,22 +1,29 @@
-import { supabase } from "@/plugins/supabase";
+import { ref } from "vue";
+import { collection, query, orderBy, getDocs } from "firebase/firestore";
+import { db } from "@/plugins/firebase";
 
 export function useJobs() {
   const jobs = ref([]);
   const loadingJobs = ref(true);
 
   async function fetchJobs() {
-    const { data, error } = await supabase
-      .from("jobs")
-      .select("*")
-      .order("order", { ascending: true });
+    try {
+      loadingJobs.value = true;
 
-    if (error) {
+      const q = query(collection(db, "jobs"), orderBy("order", "asc"));
+      const querySnapshot = await getDocs(q);
+
+      jobs.value = querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+    } catch (error) {
       console.error("Error fetching jobs:", error);
-      return;
+    } finally {
+      loadingJobs.value = false;
     }
-
-    jobs.value = data;
   }
+
   return {
     jobs,
     loadingJobs,

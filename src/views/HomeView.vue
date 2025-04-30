@@ -6,7 +6,6 @@ import SectionButtons from "../components/SectionButtons.vue";
 import CardBig from "../components/CardBig.vue";
 import TimeLine from "../components/TimeLine.vue";
 import { useProjects } from "@/composables/useProjects";
-import { migrateJobsToFirebase } from "@/plugins/migrateJobs";
 
 import techs from "@/consts/tech";
 
@@ -41,7 +40,6 @@ onMounted(async () => {
 
 <template>
   <div class="w-full sm:w-[700px]">
-    <button @click="migrateJobsToFirebase">Migrar</button>
     <div class="flex flex-col items-center">
       <ProfilePhoto></ProfilePhoto>
       <ActionButtons></ActionButtons>

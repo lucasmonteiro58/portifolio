@@ -1,5 +1,6 @@
 import { createI18n } from "vue-i18n";
-import { supabase } from "@/plugins/supabase";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/plugins/firebase";
 
 const i18n = createI18n({
   legacy: false,
@@ -11,37 +12,37 @@ const i18n = createI18n({
 });
 
 export async function loadTranslations() {
-  const { data: rows, error } = await supabase
-    .from("translations")
-    .select("language, key, value");
+  try {
+    const querySnapshot = await getDocs(collection(db, "translations"));
 
-  if (error) throw error;
+    const messagesByLocale = {};
 
-  const messagesByLocale = {};
+    querySnapshot.forEach((doc) => {
+      const { language, key, value } = doc.data();
 
-  for (const row of rows) {
-    const { language, key, value } = row;
-
-    if (!messagesByLocale[language]) {
-      messagesByLocale[language] = {};
-    }
-
-    // suporta chave aninhada com 'about.text'
-    const keyParts = key.split(".");
-    let target = messagesByLocale[language];
-
-    keyParts.forEach((part, index) => {
-      if (index === keyParts.length - 1) {
-        target[part] = value;
-      } else {
-        target[part] = target[part] || {};
-        target = target[part];
+      if (!messagesByLocale[language]) {
+        messagesByLocale[language] = {};
       }
-    });
-  }
 
-  for (const locale in messagesByLocale) {
-    i18n.global.setLocaleMessage(locale, messagesByLocale[locale]);
+      const keyParts = key.split(".");
+      let target = messagesByLocale[language];
+
+      keyParts.forEach((part, index) => {
+        if (index === keyParts.length - 1) {
+          target[part] = value;
+        } else {
+          target[part] = target[part] || {};
+          target = target[part];
+        }
+      });
+    });
+
+    for (const locale in messagesByLocale) {
+      i18n.global.setLocaleMessage(locale, messagesByLocale[locale]);
+    }
+  } catch (error) {
+    console.error("Error loading translations:", error);
+    throw error;
   }
 }
 
