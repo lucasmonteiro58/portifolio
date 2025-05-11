@@ -29,7 +29,7 @@ export async function loadTranslations() {
 
       keyParts.forEach((part, index) => {
         if (index === keyParts.length - 1) {
-          target[part] = value;
+          target[part] = String(value);
         } else {
           target[part] = target[part] || {};
           target = target[part];
